@@ -11,6 +11,7 @@ namespace AtividadeCursinhoUdemy
     {
         static void Main(string[] args)
         {
+            /*
             string produto1 = "Computador";
             string produto2 = "Mesa de escritório";
 
@@ -33,7 +34,48 @@ namespace AtividadeCursinhoUdemy
             Console.WriteLine($"Arredondando (com três casas decimais): {medida:F3}");
             Console.WriteLine("Separador decimal Invariant Culture: " + medida.ToString("F3", CultureInfo.InvariantCulture));
 
+            */
+
+            string nome;
+            int quartos;
+            double preco;
             
+
+            Console.WriteLine("Entre com o seu nome completo: ");
+            nome = Console.ReadLine();
+            
+
+            Console.WriteLine("Quantos quartos tem na sua casa?");
+            quartos = int.Parse(Console.ReadLine());
+            
+
+            Console.WriteLine("Entre com o preço de um produto: ");
+            preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
+
+            Console.WriteLine("Entre com seu último nome, idade e altura (mesma linha):");
+            string[] vet = Console.ReadLine().Split(' ');
+            string ultimoNome = vet[0];
+            int idade = int.Parse(vet[1]);
+            double altura = double.Parse(vet[2]);
+
+            Console.WriteLine(nome);
+            Console.WriteLine(quartos);
+            Console.WriteLine(preco.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(ultimoNome);
+            Console.WriteLine(idade);
+            Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
+
+
+            
+
+
+
+
+
+
+
+
 
         }
     }
